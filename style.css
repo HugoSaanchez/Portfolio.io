@@ -1,0 +1,775 @@
+body {
+  background-color: #1a1a2e; /* Negro azulado */
+  color: #ffffff; /* Texto blanco */
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+main {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+.project-card {
+  background-color: #162447; /* Fondo de la card */
+  border: 2px solid #6b5b95; /* Borde verde */
+  border-radius: 10px;
+  margin: 15px;
+  padding: 20px;
+  width: 250px; /* Ancho de la card */
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 200px; /* Ajusta la altura de las imágenes */
+  object-fit: cover; /* Recorta la imagen para que llene el espacio sin deformarse */
+  border-radius: 10px;
+}
+
+h2 {
+  margin: 10px 0;
+  
+}
+
+h3 {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #6b5b95; /* Texto verde para tecnologías */
+}
+
+p {
+  font-size: 12px;
+}
+
+.skills {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.skills h2 {
+  margin-bottom: 20px;
+}
+
+.skill {
+  display: inline-block; /* Mantén esto para que se alineen en una fila */
+  margin: 20px; /* Aumenta el espacio entre habilidades */
+  text-align: center;
+  vertical-align: middle; /* Alinea verticalmente los elementos dentro de .skill */
+}
+
+.skill-icon {
+  color: #f39c12; /* Cambia el color de los iconos */
+  font-size: 30px; /* Aumenta el tamaño del icono */
+  margin-right: 12px; /* Aumenta el espaciado entre el icono y el texto */
+}
+
+#java-skill {
+  display: inline-block;
+  cursor: pointer; /* Cambia el cursor cuando pases el ratón */
+}
+
+#java-icon {
+  transition: fill 0.3s ease; /* Suaviza la transición del color */
+}
+
+/* Cambia el color al pasar el ratón */
+#java-skill:hover #java-icon path {
+  fill: #F44336; /* Color rojo */
+}
+
+#java-skill:hover #java-icon g path {
+  fill: #1565C0; /* Color azul para los elementos dentro del grupo g */
+}
+#java-skill:hover #java-icon {
+  transform: scale(1.2); /* Aumenta el tamaño al 120% */
+}
+
+
+.skill {
+  display: inline-block; /* Alinea las habilidades en una fila */
+  margin: 20px; /* Espacio entre habilidades */
+  text-align: center;
+  vertical-align: middle; /* Alineación vertical de los elementos dentro de .skill */
+}
+
+#php-skill {
+  cursor: pointer; /* Cambia el cursor cuando pasas el ratón */
+}
+
+#php-icon {
+  transition: fill 0.3s ease, transform 0.3s ease; /* Suaviza la transición del color y el tamaño */
+}
+
+/* Cambia el color al pasar el ratón */
+#php-skill:hover #php-icon path {
+  fill: #007BB8; /* Color azul al pasar el ratón */
+}
+
+#php-skill:hover #php-icon {
+  transform: scale(1.2); /* Aumenta el tamaño al 120% */
+}
+
+#dart-skill {
+  cursor: pointer; /* Cambia el cursor cuando pasas el ratón */
+}
+
+#dart-icon {
+  transition: fill 0.3s ease, transform 0.3s ease; /* Suaviza la transición del color y el tamaño */
+}
+
+/* Cambia el color al pasar el ratón */
+#dart-skill:hover #dart-icon path:nth-child(1) {
+  fill: #1565c0; /* Color azul */
+}
+
+#dart-skill:hover #dart-icon path:nth-child(2) {
+  fill: #42a5f5; /* Color azul claro */
+}
+
+#dart-skill:hover #dart-icon path:nth-child(3) {
+  fill: #1565c0; /* Color azul */
+}
+
+#dart-skill:hover #dart-icon polygon {
+  fill: #85cbf8; /* Color azul claro para el polígono */
+}
+
+#dart-skill:hover #dart-icon {
+  transform: scale(1.2); /* Aumenta el tamaño al 120% */
+}
+#dart-skill:hover #dart-icon path,
+#dart-skill:hover #dart-icon polygon {
+  stroke: none; /* Quita el stroke al pasar el ratón */
+}
+
+#python-skill {
+  cursor: pointer; /* Cambia el cursor cuando pasas el ratón */
+}
+
+#python-icon {
+  transition: fill 0.3s ease, transform 0.3s ease; /* Suaviza la transición del color y el tamaño */
+}
+
+/* Cambia el color y quita el stroke al pasar el ratón */
+#python-skill:hover .python-part-1 {
+  fill: #0277BD; /* Color azul */
+}
+
+#python-skill:hover .python-part-2 {
+  fill: #FFC107; /* Color amarillo */
+}
+
+#python-skill:hover #python-icon {
+  transform: scale(1.2); /* Aumenta el tamaño al 120% */
+}
+
+
+#html-skill {
+  cursor: pointer; /* Cambia el cursor cuando pasas el ratón */
+}
+
+#html-icon {
+  transition: fill 0.3s ease, transform 0.3s ease; /* Suaviza la transición del color y el tamaño */
+}
+
+/* Color por defecto */
+.html-part-1 {
+  fill: #FFFFFF; /* Color blanco por defecto */
+}
+
+/* Cambia el color al pasar el ratón */
+#html-skill:hover .html-part-1 {
+  fill: #E65100; /* Color naranja */
+}
+
+#html-skill:hover #html-icon path:nth-child(2) {
+  fill: #FF6D00; /* Color más claro de naranja */
+}
+
+#html-skill:hover #html-icon path:nth-child(3) {
+  fill: #FFFFFF; /* Color blanco para el texto */
+}
+
+#html-skill:hover #html-icon path:nth-child(4) {
+  fill: #EEE; /* Color gris claro */
+}
+
+#html-skill:hover #html-icon {
+  transform: scale(1.2); /* Aumenta el tamaño al 120% */
+}
+
+.skill {
+  position: relative;
+  display: inline-block;
+  width: 50px; /* Asegúrate de que el tamaño sea el mismo para ambos SVG */
+  height: 50px; /* Asegúrate de que el tamaño sea el mismo para ambos SVG */
+}
+
+#css-color-icon {
+  display: none; /* Ocultar el ícono de color por defecto */
+}
+
+.skill:hover #css-icon {
+  display: none; /* Ocultar el ícono blanco cuando se pasa el ratón */
+}
+
+.skill:hover #css-color-icon {
+  display: inline; /* Mostrar el ícono de color cuando se pasa el ratón */
+}
+
+.skill:hover {
+  transform: scale(1.2); /* Aumentar el tamaño al 110% */
+}
+
+
+section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+.skill {
+  position: relative;
+  display: inline-block;
+  width: 50px; /* Tamaño del contenedor */
+  height: 50px; /* Tamaño del contenedor */
+  margin: 20px; /* Espacio entre habilidades */
+  text-align: center;
+}
+
+#csharp-icon,
+#csharp-color-icon {
+  width: 50px;  /* Tamaño de los íconos */
+  height: 50px; /* Tamaño de los íconos */
+  transition: opacity 0.3s; /* Suaviza la transición de opacidad */
+}
+
+#csharp-icon {
+  fill: #FFFFFF; /* Color blanco para el ícono sin color */
+}
+
+#csharp-color-icon {
+  fill: #a179dc; /* Color del ícono con color */
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* Comienza oculto */
+}
+
+.skill:hover #csharp-icon {
+  opacity: 0; /* Oculta el ícono blanco al pasar el ratón */
+}
+
+.skill:hover #csharp-color-icon {
+  opacity: 1; /* Muestra el ícono colorido al pasar el ratón */
+}
+
+#csharp-skill {
+  cursor: pointer; /* Cambia el cursor cuando pasas el ratón */
+}
+/* Estilo básico para el contenedor de habilidades */
+.skill {
+  display: inline-block; /* Alineación horizontal */
+  transition: transform 0.3s; /* Animación suave al pasar el mouse */
+}
+
+#spring-color-icon {
+  display: none; /* Ocultar el ícono de color por defecto */
+}
+
+.skill:hover #spring-icon {
+  display: none; /* Ocultar el ícono sin color al pasar el ratón */
+}
+
+.skill:hover #spring-color-icon {
+  display: inline; /* Mostrar el ícono de color al pasar el ratón */
+}
+
+/* Asegúrate de que el ícono sin color no se muestre al inicio */
+#spring-icon {
+  display: inline; /* Mostrar ícono sin color al inicio */
+}
+
+.skill svg {
+  transition: fill 0.3s;
+}
+
+.skill:hover #sql-icon {
+  display: none;
+}
+#sql-color-icon {
+  display: none; /* Ocultar el ícono de color por defecto */
+}
+
+
+.skill:hover #sql-color-icon {
+  display: inline;
+}
+
+#javascript-skill {
+  display: inline-block;
+  text-align: center;
+}
+
+#javascript-skill svg path {
+  fill: #fff; /* Sin color al inicio */
+  transition: fill 0.3s ease;
+}
+
+#javascript-skill svg path:first-child {
+  fill: white; /* Fondo sin color (gris claro) */
+}
+
+#javascript-skill svg path:last-child {
+  fill: #1a1a2e; /* Letras sin color (gris oscuro) */
+}
+
+/* Al pasar el ratón por encima, se agrega el color */
+#javascript-skill:hover svg path:first-child {
+  fill: #e9ca32; /* Fondo con color amarillo */
+}
+
+#javascript-skill:hover svg path:last-child {
+  fill: #1a1a2e; /* Letras con color oscuro */
+}
+
+/* Ocultar el ícono de color por defecto */
+
+/* Contenedor de la habilidad */
+.skill {
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Asegúrate de que el contenedor esté alineado correctamente */
+.icon-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px; /* Espacio entre el icono y el texto */
+}
+
+/* Ambos íconos deben ocupar el mismo espacio, uno encima del otro */
+#flutter-icon, #flutter-color-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease; /* Suaviza la transición entre los dos iconos */
+}
+
+/* El icono de color empieza oculto */
+#flutter-color-icon {
+  opacity: 0;
+}
+
+/* Cuando el mouse pasa por encima, se oculta el icono blanco y aparece el de color */
+.skill:hover #flutter-icon {
+  opacity: 0;
+}
+
+.skill:hover #flutter-color-icon {
+  opacity: 1;
+}
+/* Contenedor de la habilidad */
+.skill {
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Asegúrate de que el contenedor esté alineado correctamente */
+.icon-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px; /* Espacio entre el icono y el texto */
+}
+
+/* Ambos íconos deben ocupar el mismo espacio, uno encima del otro */
+#blazor-icon, #blazor-color-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease; /* Suaviza la transición entre los dos iconos */
+}
+
+/* El icono de color empieza oculto */
+#blazor-color-icon {
+  opacity: 0;
+}
+
+/* Cuando el mouse pasa por encima, se oculta el icono blanco y aparece el de color */
+.skill:hover #blazor-icon {
+  opacity: 0;
+}
+
+.skill:hover #blazor-color-icon {
+  opacity: 1;
+}
+/* Estilos generales */
+.skill {
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.icon-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px; /* Espacio entre el icono y el texto */
+}
+
+/* Ambos íconos deben ocupar el mismo espacio, uno encima del otro */
+#laravel-icon-white, #laravel-icon-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease; /* Suaviza la transición entre los dos iconos */
+}
+
+/* El icono de color empieza oculto */
+#laravel-icon-color {
+  opacity: 0;
+}
+
+/* Cuando el mouse pasa por encima, se oculta el icono blanco y aparece el de color */
+.skill:hover #laravel-icon-white {
+  opacity: 0;
+}
+
+.skill:hover #laravel-icon-color {
+  opacity: 1;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.about-me-content {
+  display: flex;
+  align-items: center;
+  max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.profile-picture {
+  width: 300px; /* Ajusta el tamaño de la foto */
+  height: 300px; /* Ajusta el tamaño de la foto */
+  border-radius: 50%; /* Crea un borde redondeado */
+  overflow: hidden; /* Asegura que la imagen redonda no se salga del borde */
+  margin-right: 20px; /* Espacio entre la foto y el texto */
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen dentro del marco redondo */
+}
+
+.about-text {
+  flex: 1; /* Ocupa el espacio restante */
+}
+
+.about-text h2 {
+  margin-bottom: 10px; /* Espacio bajo el título "Sobre mí" */
+}
+
+.about-text p {
+  line-height: 1.5; /* Espacio entre líneas del texto */
+}
+.experience-content {
+  max-width: 600px; /* Ancho máximo de la sección de experiencia */
+  margin: 20px auto; /* Centrado horizontalmente con un margen superior */
+  padding: 15px; /* Espaciado interno */
+  text-align: left; /* Alineación del texto a la izquierda */
+}
+
+.experience-item {
+  margin-bottom: 15px; /* Espaciado entre las experiencias */
+}
+
+.experience-item h3 {
+  margin: 0; /* Sin margen para los títulos de las experiencias */
+  color: #99a4e0; /* Color verde para los títulos de las experiencias */
+}
+
+.experience-item p {
+  margin: 5px 0; /* Espaciado entre los párrafos */
+  line-height: 1.5; /* Espacio entre líneas */
+}
+
+.carousel {
+  overflow: hidden; /* Oculta las imágenes que salen del contenedor */
+  width: 100%; /* Ancho del contenedor */
+  max-width: 600px; /* Ancho máximo del carrusel */
+  margin: 0 auto; /* Centra el carrusel horizontalmente */
+}
+
+.carousel-track {
+  display: flex; /* Alinea las imágenes en fila */
+  transition: transform 0.5s ease; /* Animación suave al cambiar */
+}
+
+.carousel img {
+  width: 38%; /* Cada imagen ocupa un tercio del ancho del carrusel */
+  flex-shrink: 0; /* Evita que las imágenes se encojan */
+  object-fit: cover; /* Asegura que las imágenes se ajusten al contenedor */
+}
+.project-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre los enlaces */
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #6b5b95; /* Color del texto */
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.project-links a:hover {
+  color: #007bff; /* Color al pasar el cursor */
+}
+
+.project-links i {
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+/* Estilos para el nav fijo */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #162447;
+  border-bottom: 2px solid #6b5b95;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 1em 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #6b5b95;
+}
+
+/* Aseguramos que el contenido no se esconda detrás del nav */
+main {
+  padding-top: 70px; /* Ajusta según la altura de tu nav */
+}
+
+/* Añadir margen al desplazarse hacia las secciones */
+#sobre-mi, #habilidades, #proyectos, #certificaciones,#experiencia {
+  scroll-margin-top: 80px; /* Ajusta este valor para que no se tape el contenido */
+}
+
+/* Otros estilos */
+.centered {
+  text-align: center;
+}
+
+.about-me-content {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.profile-picture img {
+  max-width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+/* Estilos para el contenido "Sobre mí" */
+#sobre-mi {
+  line-height: 1.6;  /* Incrementa el espaciado entre líneas para mejorar la legibilidad */
+  margin: 40px 20px; /* Añade margen alrededor del texto */
+}
+
+#sobre-mi h2 {
+  margin-bottom: 20px; /* Espacio inferior para separar del párrafo */
+}
+
+#sobre-mi p {
+  font-size: 1rem; /* Ajusta el tamaño del párrafo */
+  margin-bottom: 15px; /* Espacio entre los párrafos */
+  text-align: justify; /* Justifica el texto para una presentación más formal */
+}
+
+.about-text {
+  max-width: 800px; /* Limita el ancho del texto para evitar que sea demasiado largo en pantallas grandes */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+/* Estilos para el título "Experiencia" */
+.experience-content h2 {
+  font-weight: bold;
+
+  color: #fff;
+}
+
+/* Estilos para el contenido de experiencia */
+.experience-item {
+  font-size: 1.5rem; /* Texto más grande para el contenido */
+  line-height: 1.8; /* Espaciado entre líneas */
+  color: #fff;
+
+  margin-bottom: 20px;
+}
+
+/* Para resaltar el nombre de la empresa y la duración */
+.experience-item strong {
+
+  font-size: 1.6rem;
+  color: #6b5b95;
+}
+
+.experience-item em {
+  font-size: 1.4rem;
+  color: #e0e0e0;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#experiencia p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+      width: 90%; /* Ajustar el ancho en móviles */
+  }
+
+  .skills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Dos íconos por fila */
+      gap: 20px; /* Espacio entre íconos */
+      justify-items: center; /* Centra los íconos horizontalmente */
+      align-items: center; /* Centra los íconos verticalmente */
+  }
+  
+  .skill img {
+      width: 60px; /* Ajusta el tamaño de los íconos */
+      height: auto; /* Mantén la proporción */
+  }
+  
+  .skill {
+      text-align: center; /* Centra el texto debajo del ícono */
+  }
+  
+
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr; /* Una columna por fila */
+  justify-items: center; /* Centrar los proyectos horizontalmente */
+  gap: 20px; /* Espacio entre cada tarjeta de proyecto */
+  width: 100%; /* Ocupar todo el ancho disponible */
+}
+
+.project-card {
+  width: 80%; /* Ajusta el ancho de cada tarjeta de proyecto para que no sea demasiado grande */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un poco de profundidad */
+  border-radius: 8px; /* Bordes redondeados */
+  text-align: center; /* Centrar el contenido dentro de la tarjeta */
+}
+
+
+  /* Ajustar el ancho del contenedor de experiencia */
+  .experience-content {
+      max-width: 90%; /* Ajustar el ancho en móviles */
+  }
+  
+  .about-me-content {
+      flex-direction: column; /* Cambiar a columna en móviles */
+      align-items: center; /* Centrar el contenido */
+  }
+
+  .profile-picture {
+      margin-right: 0; /* Eliminar margen en móviles */
+      margin-bottom: 15px; /* Espacio debajo de la foto */
+  }
+
+  .carousel {
+      overflow: hidden; /* Oculta las imágenes que salen del contenedor */
+      width: 100%; /* Ancho del contenedor */
+      max-width: 600px; /* Ancho máximo del carrusel */
+      margin: 0 auto; /* Centra el carrusel horizontalmente */
+  }
+  
+  .carousel-track {
+      display: flex; /* Alinea las imágenes en fila */
+      transition: transform 0.5s ease; /* Animación suave al cambiar */
+  }
+  
+  .carousel img {
+      width: 38%; /* Cada imagen ocupa un tercio del ancho del carrusel */
+      flex-shrink: 0; /* Evita que las imágenes se encojan */
+      object-fit: cover; /* Asegura que las imágenes se ajusten al contenedor */
+  }
+  nav {
+      flex-direction: column; /* Cambiar a columna */
+      align-items: center; /* Centrados horizontalmente */
+  }
+
+  nav ul {
+      flex-direction: column; /* Cambiar a columna */
+      align-items: center; /* Alinear al centro */
+  }
+
+  nav ul li {
+      margin: 5px 0; /* Margen entre los elementos */
+  }
+
+  nav ul li a {
+      font-size: 0.9rem; /* Tamaño de fuente más pequeño en móviles */
+      padding: 5px 10px; /* Ajustar el espaciado alrededor del texto */
+  }
+  #sobre-mi,
+  #habilidades,
+  #proyectos,
+  #certificaciones,
+  #experiencia {
+      scroll-margin-top: 60px; /* Ajusta este valor para pantallas más pequeñas */
+  }
+}

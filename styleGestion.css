@@ -11,7 +11,7 @@ body {
 
 /* Estilo del encabezado */
 h2 {
-    color: #e9ca32; /* Color dorado */
+    color: #6b5b95; /* Color dorado */
     margin-bottom: 20px;
 }
 
@@ -34,13 +34,13 @@ ul li {
 
 /* Estilo de los enlaces */
 a {
-    color: #e9ca32; /* Color dorado */
+    color: #6b5b95; /* Color dorado */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #f39c12; /* Color naranja */
+    color: #6b5b95; /* Color naranja */
 }
 
 /* Estilo del contenedor principal */
@@ -56,7 +56,7 @@ a:hover {
 
 /* Estilo de los subtítulos */
 h3 {
-    color: #e9ca32; /* Color dorado */
+    color: #6b5b95; /* Color dorado */
     margin: 15px 0;
 }
 
@@ -68,7 +68,7 @@ h3 {
 }
 
 .github-icon:hover {
-    color: #f39c12; /* Color naranja */
+    color: #6b5b95; /* Color naranja */
 }
 
 /* Estilos del carrusel de imágenes */

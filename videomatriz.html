@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Implementación de un Sistema de Matriz de Vídeo</title>
+  <link rel="stylesheet" href="styleMatriz.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <div class="matrizvideo">
+    <h2>Implementación de un Sistema de Matriz de Vídeo</h2> 
+
+    <p>
+      Este proyecto consiste en desarrollar una aplicación de gestión de una matriz de vídeo,
+      que permite la distribución de señales de vídeo desde varios transmisores a múltiples receptores.
+      Un receptor solo puede conectarse a un transmisor a la vez, mientras que 
+      un transmisor puede enviar señal a múltiples receptores simultáneamente.
+    </p>
+
+    <p>
+      La aplicación facilitará la configuración y gestión de la matriz de vídeo, permitiendo que las configuraciones se guarden en perfiles, que estarán identificados con un nombre para facilitar la selección y cambio entre configuraciones predefinidas.
+    </p>
+
+    <h3>Funcionalidades principales:</h3>
+    <ul>
+      <li><strong>Creación y configuración de dispositivos:</strong> Los usuarios pueden crear, editar y eliminar dispositivos receptores y transmisores. Cada dispositivo tiene un nombre, una dirección IP (informativa) y un estado (Encendido, Espera, Apagado).</li>
+     
+    
+      <li><strong>Visualización en cuadrícula:</strong> Los receptores y transmisores se mostrarán en un formato de cuadrícula. Si el dispositivo está encendido, mostrará la imagen que esté transmitiendo o recibiendo.</li>
+     
+      <li><strong>Asignación y gestión de perfiles:</strong> Un sistema sencillo permitirá asignar qué receptores están conectados a qué transmisores, y se podrán crear perfiles guardando sus configuraciones, lo que permitirá cambiar rápidamente de configuración según el perfil seleccionado.</li>
+     
+     
+     
+       
+   
+
+    <h3>Herramientas y Tecnologías:</h3>
+    <p>
+      La aplicación se desarrollará en .NET 8 (C#) utilizando Blazor Server y Visual Studio como entorno de desarrollo. 
+      Se utilizará MySQL como base de datos preferente, y se permitirán paquetes NuGet según sea necesario.
+    </p>
+
+    <div class="carousel">
+      <div class="carousel-images">
+          <img src="imgs/CreacionMatriz.png" alt="Imagen 1">
+          <img src="imgs/GestionPerfiles.png" alt="Imagen 2">
+          <img src="imgs/MatrizVideo.png" alt="Imagen 3">
+          <img src="imgs/CreacionMatriz.png" alt="Imagen 1">
+          <img src="imgs/GestionPerfiles.png" alt="Imagen 2">
+          <img src="imgs/MatrizVideo.png" alt="Imagen 3">
+        
+      </div>
+  </div>
+
+  </div>
+  
+
+</body>
+</html>

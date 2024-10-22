@@ -1,0 +1,104 @@
+/* Estilos generales */
+body {
+    background-color: #1a1a2e; /* Negro azulado */
+    color: #ffffff; /* Texto blanco */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilo del encabezado */
+h2 {
+    color: #6b5b95; /* Color morado */
+    margin-bottom: 20px;
+}
+
+/* Estilo de los párrafos */
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Estilo de las listas */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilo de los enlaces */
+a {
+    color: #6b5b95; /* Color morado */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f5a623; /* Color naranja */
+}
+
+/* Estilo del contenedor principal */
+.autocuidado-emocional {
+    background-color: #162447; /* Fondo del contenedor */
+    border: 2px solid #6b5b95; /* Borde morado */
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%; /* Ancho del contenedor */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    text-align: left;
+}
+
+/* Estilo de los subtítulos */
+h3 {
+    color: #6b5b95; /* Color morado */
+    margin: 15px 0;
+}
+
+/* Estilo del icono de GitHub */
+.github-icon {
+    color: #ffffff; /* Color blanco */
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.github-icon:hover {
+    color: #f5a623; /* Color naranja */
+}
+
+/* Estilos del carrusel de imágenes (si es necesario incluirlo) */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    height: 150px; /* Ajusta la altura del carrusel */
+}
+
+.carousel-images {
+    display: flex;
+    width: calc(100% * 6); /* Ajusta según el número de imágenes duplicadas */
+    animation: scroll 9s linear infinite;
+}
+
+.carousel-images img {
+    width: calc(100% / 6); /* Ajusta según el número de imágenes duplicadas */
+    height: 150px; /* Ajusta la altura de las imágenes */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor */
+    margin: 0; /* Elimina cualquier margen */
+}
+
+/* Animación para el carrusel */
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
